@@ -12,12 +12,12 @@ let dog = ecs.createEntity('dog');
 
 // add components to the dog
 ecs.addComponentToEntity(
-    game.createComponent('animal', { 'type': 'doggo', 'good_boy': 'the best' }),
+    ecs.createComponent('animal', { 'type': 'doggo', 'good_boy': 'the best' }),
     dog
 );
 
 ecs.addComponentToEntity(
-    game.createComponent('tail', { 'length': 'medium', 'color': 'brown', 'bushy': 'you bet' }),
+    ecs.createComponent('tail', { 'length': 'medium', 'color': 'brown', 'bushy': 'you bet' }),
     dog
 );
 
