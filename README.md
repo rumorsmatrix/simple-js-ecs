@@ -33,8 +33,8 @@ ecs.process();
 ecs.deleteEntity(entity_uid);
 ecs.removeComponentFromEntity(component_name, entity_uid); // both of these automatically unsubscribe from relevant Systems
 
-ecs.pause_systems(); // stops all systems from processing when ecs.process() is called
-ecs.unpause_systems();
+ecs.pauseSystems(); // stops all systems from processing when ecs.process() is called
+ecs.unpauseSystems();
 
 system.pause(); // stops a specific system from processing during the main ecs.process() loop
 system.unpause();
